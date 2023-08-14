@@ -1,0 +1,6 @@
+.sfondo {
+    background-color: #f0f0f0; /* Cambia il colore dello sfondo se preferisci */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><text x="0" y="15" font-size="16">🌸</text></svg>');
+    background-repeat: repeat;
+    background-size: 30px; /* Imposta la dimensione desiderata dell'emoji */
+}
