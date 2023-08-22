@@ -43,7 +43,7 @@
 <body class="bg-black">
     <!--lg:px-28 md:px-12 sm:px-20-->
     <!--<div class="lg:mx-36 md:mx-8 sm:mx-0 bg-[#18181b] px-4 lg:px-28 md:px-12 pt-6 h-auto border-[0.1px] border-zinc-700 pb-10">--> <!-- CONTAINER -->
-    <div class="md:container mx-auto bg-rose-300 px-4 lg:px-28 md:px-12 sm:px-0 pt-6 h-auto border-[0.1px] border-zinc-700 pb-16">
+    <div class="md:container mx-auto bg-gradient-to-r from-rose-500 to-pink-600 px-4 lg:px-28 md:px-12 sm:px-0 pt-6 h-[600px] border-[0.1px] border-zinc-700 relative">
 
         <!--navbar-->
         <div class="flex items-center justify-center fixed left-0 w-full z-50">
@@ -93,10 +93,9 @@
                                 <a
                                     class="text-zinc-200 text-sm lg:px-2 [&.active]:text-black/90 [&.active]:text-neutral-200 hover:text-rose-400"
                                     aria-current="page"
-                                    href="#"
+                                    href="{{ route('home') }}"
                                     data-te-nav-link-ref
-                                >Home</a
-                                >
+                                >Home</a>
                             </li>
                             <!-- Features link -->
                             <li
@@ -125,25 +124,28 @@
                 </div>
             </nav>
 
-            <button class=" px-3 rounded-full bg-neutral-800 w-auto py-2 border-[0.1px] border-zinc-700 text-zinc-200 hover:text-rose-400">
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
-                </svg>
-            </button>
+            <div class="flex px-3 rounded-full bg-neutral-800 w-auto py-2 border-[0.1px] border-zinc-700 text-zinc-200 hover:text-rose-400">
+                <button class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+                    </svg>
+                </button>
+                <span class="my-auto mx-4">Ciao, Davide</span>
+            </div>
         </div>
 
-        <div class="pt-16 md:w-[70%] sm:w-[100%] lg:flex">
-            <img src="{{ url('/') }}/img/logo.jpg" alt="logo" class="rounded-full w-24 lg:w-44 h-auto border-4 border-rose-400 lg:mr-10">
-            <h1 class="text-5xl font-bold text-white pt-8" style="font-family: 'Trebuchet MS', sans-serif">
-                <span style="font-family:'URW Chancery L', cursive;" class="text-7xl">Cerch’io</span> - tele ricamate e dipinte a mano
+        <div class="lg:flex absolute inset-x-0 bottom-0 px-4 lg:px-14 md:px-12 sm:px-0 pb-6">
+            <img src="{{ url('/') }}/img/logo.jpg" alt="logo" class="rounded-full w-36 lg:w-64 h-auto border-4 border-rose-400 lg:mr-10">
+            <h1 class="text-5xl font-bold text-white pt-8 my-auto" style="font-family: 'Trebuchet MS', sans-serif">
+                <span style="font-family:'URW Chancery L', cursive;" class="text-8xl">Cerch’io</span> <br> tele ricamate e dipinte a mano
             </h1>
         </div>
     </div>
 
     <!-- <div class="lg:mx-36 md:mx-8 sm:mx-0 bg-[#18181b] px-4 lg:px-28 md:px-12 pt-6 h-auto border-[0.1px] border-zinc-700 pb-10">-->
     <div class="md:container mx-auto bg-[#18181b] px-4 lg:px-28 md:px-12 sm:px-0 pt-24 h-auto ">
-        <h1 class="text-5xl font-bold text-zinc-200 pt-8" style="font-family: 'Trebuchet MS', sans-serif">
-            Tessendo emozioni: arte e ricamo su tela personalizzata
+        <h1 class="text-6xl font-bold text-zinc-200 pt-8" style="font-family: 'Trebuchet MS', sans-serif">
+            Crea con Filo: arte e ricamo per tele uniche
         </h1>
          <p class="pt-10  text-zinc-400 text-lg leading-9" style="font-family: 'Trebuchet MS', sans-serif">
              Esplora il nostro sito di arte unica: tele ricamate e dipinte a mano. <br>
@@ -188,15 +190,15 @@
         </p>-->
     </div>
 
-    <div class="md:container mx-auto bg-rose-50 px-4 lg:px-28 md:px-12 sm:px-0 pb-10 h-auto ">
+    <div class="md:container mx-auto bg-gradient-to-r from-rose-500 to-pink-600 px-4 lg:px-28 md:px-12 sm:px-0 pb-10 h-auto ">
     <!--shop-->
         <div class="pt-16 md:w-[70%] sm:w-[100%]">
-            <h1 id="shop" class="text-5xl font-bold text-black flex" style="font-family: 'Trebuchet MS', sans-serif">
-                <span class="mr-2">Shop</span> <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+            <h1 id="shop" class="text-6xl font-bold text-black bg-white flex w-fit py-2 px-2" style="font-family: 'Trebuchet MS', sans-serif">
+                <span class="mr-2">Shop</span> <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
                     <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
                 </svg>
             </h1>
-            <p class="pt-8  text-black text-lg leading-7" style="font-family: 'Trebuchet MS', sans-serif">
+            <p class="pt-8  text-rose-50 text-lg leading-7" style="font-family: 'Trebuchet MS', sans-serif">
                 Esplora la nostra sezione di vendita, dove l'arte e l'artigianato si fondono in creazioni uniche. <br>
                 Dalle tele dipinte e ricamate a mano a prodotti artigianali selezionati, scopri opere che raccontano storie e trasmettono autenticità. <br>
                 Entra in un mondo di bellezza unica e originalità, dove ogni dettaglio è realizzato con passione. <br>
@@ -248,9 +250,9 @@
                         <button class="h-10 px-6 font-semibold rounded-md bg-black text-white" type="submit">
                             Acquista
                         </button>
-                        <button class="h-10 px-6 font-semibold rounded-md border border-slate-200 text-slate-900" type="button">
+                        <a href="{{ route('product') }}"><button class="h-10 px-6 font-semibold rounded-md border border-slate-200 text-slate-900" type="button">
                             Dettagli
-                        </button>
+                        </button></a>
                     </div>
                     <!--<button class="flex-none flex items-center justify-center w-9 h-9 rounded-md text-slate-300 border border-slate-200" type="button" aria-label="Like">
                         <svg width="20" height="20" fill="currentColor" aria-hidden="true">
